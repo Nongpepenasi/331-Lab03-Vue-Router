@@ -7,6 +7,7 @@ import PassengerDetailView from '../views/passenger/PassengerDetailView.vue'
 import PassengerEditView from '@/views/passenger/PassengerEditView.vue'
 import PassengerRegisterView from '@/views/passenger/PassengerRegisterView.vue'
 import PassengerLayoutView from '@/views/passenger/PassengerLayoutView.vue'
+import PassengerAirlineView from '@/views/passenger/PassengerAirlineView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 import NetworkErrorView from '@/views/NetworkErrorView.vue'
 
@@ -56,6 +57,12 @@ const router = createRouter({
           path: 'register',
           name: 'passenger-register',
           component: PassengerRegisterView,
+          props: true
+        },
+        {
+          path: 'airline',
+          name: 'passenger-airline',
+          component: PassengerAirlineView,
           props: true
         }
       ]

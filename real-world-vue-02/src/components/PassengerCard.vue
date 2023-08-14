@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import type { PassengerItem } from '@/type';
+import type { PassengerItem, AirlineItem } from '@/type';
 import type { PropType } from 'vue'
 const props = defineProps({
   passenger: {

@@ -1,6 +1,6 @@
 import axios from 'axios'
 import type {AxiosInstance, AxiosResponse} from 'axios'
-import type { PassengerItem } from '@/type'
+import type { AirlineItem, PassengerItem } from '@/type'
 
 const apiClient: AxiosInstance = axios.create({
     baseURL: 'http://localhost:3004',
@@ -18,5 +18,8 @@ export default {
     },
     getPassengerById(id: number): Promise<AxiosResponse<PassengerItem>>{
         return apiClient.get<PassengerItem>('passengers/' + id.toString())
+    },
+    getAirlineById(id: number): Promise<AxiosResponse<AirlineItem>>{
+        return apiClient.get<AirlineItem>('airline/' + id.toString())
     }
 }

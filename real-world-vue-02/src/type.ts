@@ -32,4 +32,13 @@ export interface PassengerItem {
    Destination: string
    travelDate: string
    airlineId: number
+   AirlineName: string
+   address: string
+}
+
+export interface AirlineItem {
+   id: number
+   AirlineName: string
+   email: string
+   address: string
 }
